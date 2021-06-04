@@ -1,0 +1,43 @@
+<%# <form accept-charset="UTF-8" action="/users" data-remote="true" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+   <%# <label for="email">Email: </label>
+  <input type="text" id="email" name="user[email]"><br><br>
+  <label for="username">Username: </label>
+  <input type="text" id="username" name="user[username]"><br><br>
+  <label for="password">Password: </label>
+  <input type="password" id="password" name="user[password]"><br><br>
+  <input type="submit" value="Submit">
+</form>  %>
+
+<%# <%= form_tag("/users", method: "post") do %>
+  <%# <%= label_tag(:user, "Email:") %>
+  <%# <%= text_field_tag(:email) %>
+  
+  <%# <%= label_tag(:user, "Username:") %>
+  <%# <%= text_field_tag(:username) %>
+  
+  <%# <%= label_tag(:user, "Password:") %>
+  <%# <%= password_field_tag(:password) %>
+  
+  <%# <%= submit_tag("Submit") %>
+<%# <% end %>
+
+<div>
+  <%= form_with model: @user do |form| %>
+    <p><%= form.label :user, "Email:" %></p>
+    <p><%= form.text_field :email %></p>
+
+    <p><%= form.label :user, "Username:" %></p>
+    <p><%= form.text_field :username %></p>
+
+    <p><%= form.label :user, "Password:" %></p>
+    <p><%= form.password_field :password %></p>
+    <%= form.submit "Sign in" %>
+  <% end %>
+</div>
+
+<div>
+  <p><%= email_error.join(', ') %></p>
+  <p><%= username_error.join(', ') %></p>
+  <p><%= password_error.join(', ') %></p>
+</div>
