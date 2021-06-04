@@ -30,7 +30,7 @@ Clone repository from github to your local drive by following these steps:
 - Press Enter to create your local clone
 - Open your terminal and type <code>rails s</code>. After that join to localhost at http://localhost:3000/
 - Remember: Yarn packages need to be installed by running the command <code>yarn install</code> for local setup. Otherwise, the app generates an error.
-- Create a database by typing in the terminal <code>db:create</code> and then <code>db:migrate</code> to define changes to your database schema
+- Create a database by typing in the terminal <code>rails db:create</code> and then <code>rails db:migrate</code> to define changes to your database schema
 - Feel free to sign up or sign in and start posting!
 
 ### Install
