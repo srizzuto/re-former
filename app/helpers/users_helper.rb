@@ -1,5 +1,4 @@
 module UsersHelper
-
   def emailError
     @user.errors.full_messages_for(:email).each do |msg|
       msg
@@ -17,5 +16,4 @@ module UsersHelper
       msg
     end
   end
-
 end
