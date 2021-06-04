@@ -28,7 +28,8 @@ Clone repository from github to your local drive by following these steps:
 - Change the current working directory to the location you want the cloned directory
 - Type one of the git clone commands listed above.
 - Press Enter to create your local clone
-- Open up the twitter clone on your localhost at http://localhost:3000/
+- Open your terminal and type <code>rails s</code>. After that join to localhost at http://localhost:3000/
+- Remember: Yarn packages need to be installed by running the command <code>yarn install</code> for local setup. Otherwise, the app generates an error.
 - Feel free to sign up or sign in and start posting!
 
 ### Install
