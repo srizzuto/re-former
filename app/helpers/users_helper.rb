@@ -1,17 +1,18 @@
+# frozen_string_literal: true
 module UsersHelper
-  def emailError
+    def email_error
     @user.errors.full_messages_for(:email).each do |msg|
       msg
     end
   end
 
-  def usernameError
+  def username_error
     @user.errors.full_messages_for(:username).each do |msg|
       msg
     end
   end
 
-  def passwordError
+  def password_error
     @user.errors.full_messages_for(:password).each do |msg|
       msg
     end
