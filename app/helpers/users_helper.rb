@@ -1,6 +1,6 @@
-# frozen_string_literal: true
 module UsersHelper
-    def email_error
+  # rubocop: disable Lint/Void
+  def email_error
     @user.errors.full_messages_for(:email).each do |msg|
       msg
     end
@@ -17,4 +17,5 @@ module UsersHelper
       msg
     end
   end
+  # rubocop: enable Lint/Void
 end
